@@ -12,7 +12,7 @@ h1{
     font-weight: 400;
     cursor: pointer;
 
-    /* Evitar a seleção de testo na logo! */
+    /* Evitar a seleção por parte do usuário!*/
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 
      -khtml-user-select: none; 

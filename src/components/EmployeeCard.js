@@ -1,12 +1,12 @@
-import styles from './EmployeeCard.module.css'
+import styles from './EmployeeCard.module.css';
+import profilePic from '../imgs/user-line.png';
 
-function EmployeeCard (){
-    return(
+function EmployeeCard() {
+    return (
         <div className={styles.box}>
-            <img alt='profile-pic'/>
-
+            <img src={profilePic} alt='profile-pic' className={styles.profilePic} />
             <span>Nome</span>
-            <div>
+            <div className={styles.viewButton}>
                 <span>Vizualizar</span>
             </div>
         </div>
