@@ -27,15 +27,16 @@ h1::after{
     cursor: pointer;
 }
 
-h3{
+.h3{
     color: aliceblue;
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.7rem;
     cursor: pointer;
     transition: 200ms;
+    text-decoration: none;
 }
 
-h3:hover{
+.h3:hover{
     color: #FF9900;
 }
