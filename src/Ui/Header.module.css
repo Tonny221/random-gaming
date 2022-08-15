@@ -1,0 +1,24 @@
+header{
+    background-color: #002DB3;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2.5rem;
+    align-items: flex-end;
+}
+
+h1{
+    color: aliceblue;
+}
+
+h3{
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+h3:hover{
+    color: #FF9900;
+}
