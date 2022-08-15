@@ -11,7 +11,6 @@ function Employees (){
                 <EmployeeCard />
                 <EmployeeCard />
                 <EmployeeCard />
-                <EmployeeCard />
             </div>
         </section>
     );

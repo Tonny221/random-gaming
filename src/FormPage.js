@@ -1,8 +1,12 @@
 import Header from "./Ui/Header";
+import Form from "./containers/Form";
 
-function FormPage (){
-    return(
-        <Header />
+function FormPage() {
+    return (
+        <div>
+            <Header />
+            <Form />
+        </div>
     );
 }
 
