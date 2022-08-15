@@ -5,9 +5,11 @@ header{
     padding-inline: 2.5rem;
     flex-direction: row;
     align-items: flex-end;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
-h1{
+.h1{
     color: aliceblue;
     font-weight: 400;
     cursor: pointer;
@@ -21,7 +23,7 @@ h1{
             user-select: none;
 }
 
-h1::after{
+.h1::after{
     content: 'Gaming';
     color: #FF9900;
     cursor: pointer;

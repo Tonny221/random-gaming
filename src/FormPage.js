@@ -1,6 +1,8 @@
+import Header from "./Ui/Header";
+
 function FormPage (){
     return(
-        <div>sdasdasdasdasdasdaasd</div>
+        <Header />
     );
 }
 
