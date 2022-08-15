@@ -3,11 +3,28 @@ header{
     display: flex;
     justify-content: space-between;
     padding-inline: 2.5rem;
+    flex-direction: row;
     align-items: flex-end;
 }
 
 h1{
     color: aliceblue;
+    font-weight: 400;
+    cursor: pointer;
+
+    /* Evitar a seleção de testo na logo! */
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+h1::after{
+    content: 'Gaming';
+    color: #FF9900;
+    cursor: pointer;
 }
 
 h3{

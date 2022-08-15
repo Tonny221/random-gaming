@@ -3,12 +3,8 @@ import "./Header.module.css"
 function Header(){
     return(
         <header>
-            <a href="#">
-                <h1>Random.Gaming</h1>
-            </a>
-            <a>
-                <h3>Cadastrar novo funcionário</h3>
-            </a>
+                <h1>Random.</h1>
+                <h3>Cadastrar novo funcionário</h3>   
         </header>
     );
 }
