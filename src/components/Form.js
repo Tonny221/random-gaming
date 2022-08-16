@@ -52,7 +52,9 @@ function Form() {
 
                     <div className={styles.dataDiv}>
                         <label>Foto de perfil:</label>
-                        <button></button>
+                        <button onClick={(event) =>{
+                            event.preventDefault();
+                        }}></button>
                         <input type="file" accept="image/*" className={styles.fileInput}/>
                     </div>
 
