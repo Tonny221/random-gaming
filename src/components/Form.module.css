@@ -1,0 +1,60 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.dataDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border: 2px solid black;
+    width: 50%;
+    margin: 2rem auto;
+    box-shadow: 10px 10px 6px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    justify-items: center;
+    padding: 1.5rem;
+    
+    /* Display grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+    width: 6rem;
+    margin: 1rem auto;
+    background-color: #FF9900;
+    font-family: 'Kadwa', serif;
+    cursor: pointer;
+}
+
+input {
+    border: 0;
+    background-color: #BFCFFF;
+    height: 1.5rem;
+    padding: 0 5px;
+}
+
+input, select {
+    width: 15rem;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        width: 80%;
+    }
+
+    input, select {
+        width: auto;
+    }
+}

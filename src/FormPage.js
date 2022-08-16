@@ -1,5 +1,5 @@
 import Header from "./Ui/Header";
-import Form from "./containers/Form";
+import Form from "./containers/FormContainer";
 
 function FormPage() {
     return (
