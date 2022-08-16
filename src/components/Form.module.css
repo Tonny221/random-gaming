@@ -64,7 +64,8 @@ select {
 }
 
 button {
-    padding: 5rem;
+    width: 15rem;
+    height: 15rem;
     cursor: pointer;
 }
 
@@ -76,6 +77,11 @@ button {
     .formData {
         display: flex;
         flex-direction: column;
+    }
+
+    button {
+        width: auto;
+        height: 12rem;
     }
 
     input,

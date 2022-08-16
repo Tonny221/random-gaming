@@ -1,7 +1,10 @@
 import styles from './Form.module.css'
 import { useRef, useState, useEffect } from 'react'
 
-function Form() {   
+function Form() {
+    const fileInputRef = useRef();
+    const [image, setImage] = useState();
+
     return (
         <div className={styles.box}>
             <h2>Cadastro</h2>
@@ -52,10 +55,11 @@ function Form() {
 
                     <div className={styles.dataDiv}>
                         <label>Foto de perfil:</label>
-                        <button onClick={(event) =>{
+                        <button onClick={(event) => {
                             event.preventDefault();
+                            fileInputRef.current.click();
                         }}></button>
-                        <input type="file" accept="image/*" className={styles.fileInput}/>
+                        <input type="file" accept="image/*" className={styles.fileInput} ref={fileInputRef} />
                     </div>
 
                     <div className={styles.dataDiv}>
