@@ -1,6 +1,6 @@
 import styles from './Form.module.css'
 
-function Form() {
+function Form() {   
     return (
         <div className={styles.box}>
             <h2>Cadastro</h2>
@@ -51,7 +51,8 @@ function Form() {
 
                     <div className={styles.dataDiv}>
                         <label>Foto de perfil:</label>
-                        <input type="file" />
+                        <button></button>
+                        <input type="file" accept="image/*" className={styles.fileInput}/>
                     </div>
 
                     <div className={styles.dataDiv}>

@@ -7,7 +7,7 @@ h1 {
     font-weight: 400;
 }
 
-.dataDiv{
+.dataDiv {
     display: flex;
     flex-direction: column;
 }
@@ -28,10 +28,10 @@ h1 {
 }
 
 .formData {
-     /* Display grid */
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     justify-items: center;
+    /* Display grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .btn {
@@ -54,8 +54,18 @@ input {
     padding: 0 5px;
 }
 
-input, select {
+input,
+select {
     width: 15rem;
+}
+
+.fileInput {
+    display: none;
+}
+
+button {
+    padding: 5rem;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,12 +73,13 @@ input, select {
         width: 80%;
     }
 
-    .form {
+    .formData {
         display: flex;
         flex-direction: column;
     }
 
-    input, select {
+    input,
+    select {
         width: auto;
     }
 }
