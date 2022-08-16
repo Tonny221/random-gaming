@@ -22,20 +22,26 @@ h1 {
 }
 
 .form {
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
-    
-    /* Display grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+.formData {
+     /* Display grid */
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-items: center;
 }
 
 .btn {
     width: 6rem;
-    margin: 1rem auto;
+    margin: 0 auto;
+    margin-top: 1.5rem;
     background-color: #FF9900;
     font-family: 'Kadwa', serif;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 input {
@@ -50,8 +56,13 @@ input, select {
 }
 
 @media screen and (max-width: 600px) {
-    .form {
+    .box {
         width: 80%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
     }
 
     input, select {
