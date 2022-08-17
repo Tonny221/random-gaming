@@ -23,15 +23,16 @@ h1 {
 
 .form {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 1.5rem;
 }
 
 .formData {
-    /* Display grid */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    grid-gap: 1rem;
 }
 
 .btn {

@@ -64,23 +64,25 @@ function Form() {
                         </select>
                     </div>
 
-                    <div className={styles.dataDiv}>
-                        <label>Foto de perfil:</label>
-                        { preview ? ( <img src={preview} alt="preview" className={styles.previewImg} /> ) :
-                        ( <button onClick={(event) => {
-                            event.preventDefault();
-                            fileInputRef.current.click();
-                        }}> 
-                        </button> ) }
-                        <input type="file" accept="image/*" className={styles.fileInput} ref={fileInputRef}
-                            onChange={(event) => {
-                                const file = event.target.files[0];
-                                if (file && file.type.substr(0, 5) === "image") {
-                                    setImage(file);
-                                } else {
-                                    setImage(null);
-                                }
-                            }} />
+                    <div>
+                        <div className={styles.dataDiv}>
+                            <label>Foto de perfil:</label>
+                            {preview ? (<img src={preview} alt="preview" className={styles.previewImg} />) :
+                                (<button onClick={(event) => {
+                                    event.preventDefault();
+                                    fileInputRef.current.click();
+                                }}>
+                                </button>)}
+                            <input type="file" accept="image/*" className={styles.fileInput} ref={fileInputRef}
+                                onChange={(event) => {
+                                    const file = event.target.files[0];
+                                    if (file && file.type.substr(0, 5) === "image") {
+                                        setImage(file);
+                                    } else {
+                                        setImage(null);
+                                    }
+                                }} />
+                        </div>
                     </div>
 
                     <div className={styles.dataDiv}>
