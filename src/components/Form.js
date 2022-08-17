@@ -4,6 +4,17 @@ import { useRef, useState, useEffect } from 'react'
 function Form() {
     const fileInputRef = useRef();
     const [image, setImage] = useState();
+    const [preview, setPreview] = useState();
+
+    useEffect(() => {
+        if (image) {
+            const reader = new FileReader();
+            reader.onloadend = () => { setPreview(reader.result); };
+            reader.readAsDataURL(image);
+        } else {
+            setPreview(null);
+        }
+    }, [image]);
 
     return (
         <div className={styles.box}>
@@ -55,11 +66,21 @@ function Form() {
 
                     <div className={styles.dataDiv}>
                         <label>Foto de perfil:</label>
-                        <button onClick={(event) => {
+                        { preview ? ( <img src={preview} alt="preview" className={styles.previewImg} /> ) :
+                        ( <button onClick={(event) => {
                             event.preventDefault();
                             fileInputRef.current.click();
-                        }}></button>
-                        <input type="file" accept="image/*" className={styles.fileInput} ref={fileInputRef} />
+                        }}> 
+                        </button> ) }
+                        <input type="file" accept="image/*" className={styles.fileInput} ref={fileInputRef}
+                            onChange={(event) => {
+                                const file = event.target.files[0];
+                                if (file && file.type.substr(0, 5) === "image") {
+                                    setImage(file);
+                                } else {
+                                    setImage(null);
+                                }
+                            }} />
                     </div>
 
                     <div className={styles.dataDiv}>

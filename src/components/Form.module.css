@@ -63,10 +63,12 @@ select {
     display: none;
 }
 
-button {
+button, .previewImg {
     width: 15rem;
     height: 15rem;
     cursor: pointer;
+    border: 2px solid black;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 600px) {
@@ -79,7 +81,8 @@ button {
         flex-direction: column;
     }
 
-    button {
+    button,
+    .previewImg {
         width: auto;
         height: 12rem;
     }
