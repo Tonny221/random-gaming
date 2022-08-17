@@ -1,7 +1,7 @@
 import EmployeeCard from "../components/EmployeeCard";
 import styles from './Employees.module.css';
 
-function Employees (){
+function Employees (){ 
     return (
         <section>
             <h2>Funcionários cadastrados</h2>
