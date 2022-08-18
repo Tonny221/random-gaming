@@ -1,5 +1,6 @@
 .modal {
     position: absolute;
+    overflow-y: initial;
 }
 
 .modal,
@@ -10,7 +11,7 @@
     right: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 .overlay {
@@ -72,4 +73,47 @@ button {
     display: flex;
     justify-content: space-between;
     column-gap: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .nome {
+        margin-top: 2rem;
+    }
+    
+    .content {
+        margin: 4rem auto;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .personalData {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    .profilePic {
+        width: 18rem;
+        height: 18rem;
+        margin: 1rem 1rem;
+    }
+
+    .adress {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.25rem;
+        margin-left: 2rem;
+    }
+
+    .buttons {
+        margin: 4rem 2rem 2rem 2rem;
+        text-align: center;
+    }
+
+    .sideBtn {
+        column-gap: 2.41rem;
+    }
 }

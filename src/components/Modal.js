@@ -7,7 +7,7 @@ function Modal() {
                 <div className={styles.overlay}>
                 </div>
                 <div className={styles.content}>
-                    <h2>Nome</h2>
+                    <h2 className={styles.nome}>Nome</h2>
                     <div className={styles.personalData}>
                         <div className={styles.profilePic}>
                             <img src="#" alt='profile-pic' />
