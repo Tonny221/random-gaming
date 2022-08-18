@@ -20,5 +20,26 @@
 .content {
     border: 2px solid black;
     width: 50%;
-    margin: 6rem auto;
+    margin: 5rem auto;
+    background-color: #E1E9FF;
+    height: 80%;
+}
+
+.profilePic {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid black;
+    margin-right: 2rem;
+}
+
+.personalData {
+    display: flex;
+    margin-left: 4rem;
+}
+
+.adress {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2rem;
+    margin-left: 4rem;
 }
