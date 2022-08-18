@@ -1,25 +1,29 @@
 import styles from './EmployeeCard.module.css';
 import profilePic from '../imgs/user-line.png';
-import Modal from "../components/Modal";
+import ModalComponent from "../components/ModalComponent";
 import { useState } from 'react';
 
 function EmployeeCard() {
-    const [modal, setModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
-    const toggleModal = () => {
-        setModal(!modal);
+    const openModal = () => {
+        setShowModal(!showModal);
     }
 
+
+
     return (
-        <div className={styles.box} onClick={toggleModal}>
+        <div className={styles.box} onClick={openModal}>
             <img src={profilePic} alt='profile-pic' className={styles.profilePic} />
             <span>Nome</span>
             <div className={styles.viewButton}>
                 <span>Vizualizar</span>
             </div>
-            {modal && (
-                <Modal toggle={toggleModal} name="Nome" />
-            )}
+            <ModalComponent
+                showModal={showModal}
+                setShowModal={setShowModal}
+                name="SWER"  
+              />
         </div>
     );
 }

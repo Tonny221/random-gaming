@@ -1,12 +1,12 @@
 import styles from './Modal.module.css';
 
-function Modal(props) {
+function ModalComponent(props) {
     return (
-        <div className={styles.container}>
-            <div className={styles.modal}>
+        <>
+            {props.showModal ? <div className={styles.modal}>
                 <div className={styles.overlay}>
                 </div>
-                <div className={styles.content} onClick={props.toggle}>
+                <div className={styles.content}>
                     <h2 className={styles.nome}>{props.name}</h2>
                     <div className={styles.personalData}>
                         <div className={styles.profilePic}>
@@ -40,9 +40,9 @@ function Modal(props) {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> : null}
+        </>
     );
 }
 
-export default Modal;
+export default ModalComponent;
