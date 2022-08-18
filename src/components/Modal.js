@@ -32,6 +32,13 @@ function Modal() {
                         <h4>Número:</h4>
                     </div>
 
+                    <div className={styles.buttons}>
+                        <button className={styles.editBtn}>Editar</button>
+                        <div className={styles.sideBtn}>
+                            <button>Excluir</button>
+                            <button>Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
