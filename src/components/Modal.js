@@ -1,13 +1,13 @@
 import styles from './Modal.module.css';
 
-function Modal() {
+function Modal(props) {
     return (
         <div className={styles.container}>
             <div className={styles.modal}>
                 <div className={styles.overlay}>
                 </div>
-                <div className={styles.content}>
-                    <h2 className={styles.nome}>Nome</h2>
+                <div className={styles.content} onClick={props.toggle}>
+                    <h2 className={styles.nome}>{props.name}</h2>
                     <div className={styles.personalData}>
                         <div className={styles.profilePic}>
                             <img src="#" alt='profile-pic' />
@@ -35,8 +35,8 @@ function Modal() {
                     <div className={styles.buttons}>
                         <button className={styles.editBtn}>Editar</button>
                         <div className={styles.sideBtn}>
-                            <button>Excluir</button>
-                            <button>Fechar</button>
+                            <button className={styles.btn}>Excluir</button>
+                            <button className={styles.btn}>Fechar</button>
                         </div>
                     </div>
                 </div>

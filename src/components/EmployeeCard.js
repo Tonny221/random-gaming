@@ -18,7 +18,7 @@ function EmployeeCard() {
                 <span>Vizualizar</span>
             </div>
             {modal && (
-                <Modal />
+                <Modal toggle={toggleModal} name="Nome" />
             )}
         </div>
     );
