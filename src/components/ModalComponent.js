@@ -36,7 +36,7 @@ function ModalComponent(props) {
                         <button className={styles.editBtn}>Editar</button>
                         <div className={styles.sideBtn}>
                             <button className={styles.btn}>Excluir</button>
-                            <button className={styles.btn}>Fechar</button>
+                            <button className={styles.btn} onClick={() => props.setShowModal(!props.showModal)}>Fechar</button>
                         </div>
                     </div>
                 </div>

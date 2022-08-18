@@ -13,18 +13,20 @@ function EmployeeCard() {
 
 
     return (
-        <div className={styles.box} onClick={openModal}>
-            <img src={profilePic} alt='profile-pic' className={styles.profilePic} />
-            <span>Nome</span>
-            <div className={styles.viewButton}>
-                <span>Vizualizar</span>
+        <>
+            <div className={styles.box} onClick={openModal}>
+                <img src={profilePic} alt='profile-pic' className={styles.profilePic} />
+                <span>Nome</span>
+                <div className={styles.viewButton}>
+                    <span>Vizualizar</span>
+                </div>
             </div>
             <ModalComponent
                 showModal={showModal}
                 setShowModal={setShowModal}
-                name="SWER"  
-              />
-        </div>
+                name="Nome"
+            />
+        </>
     );
 }
 
