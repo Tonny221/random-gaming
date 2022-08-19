@@ -8,9 +8,6 @@ function Employees (){
             
             <div className={styles.div}>
                 <EmployeeCard />
-                <EmployeeCard />
-                <EmployeeCard />
-                <EmployeeCard />
             </div>
         </section>
     );
