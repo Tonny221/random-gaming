@@ -97,42 +97,42 @@
     }
 
     .content {
-        margin: 4rem auto;
+        margin: 1rem auto;
         width: 90%;
-        height: 90%;
+        height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-size: 0.75rem;
     }
 
     .personalData {
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
+        justify-content: center;
     }
 
     .profilePic {
         width: 18rem;
         height: 18rem;
-        margin: 1rem 1rem;
+        margin: 1rem auto;
     }
 
     .adress {
         display: flex;
         flex-direction: column;
         row-gap: 0.25rem;
-        margin-left: 2rem;
     }
 
     .buttons {
-        margin: 1rem 2rem 2rem 2rem;
+        margin: 1rem;
     }
 
     .sideBtn {
-        column-gap: 2.41rem;
+        column-gap: 3.25rem;
     }
 
-    .editBtn {
+    .editBtn, .btn {
         height: 2rem;
     }
 }
